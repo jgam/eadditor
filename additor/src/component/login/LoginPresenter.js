@@ -6,9 +6,10 @@ function LoginPresenter({ loginData, handleChange, handleSubmit }) {
       <h1 className='text-center'>로그인</h1>
       <form onSubmit={handleSubmit}>
         <input
-          type='username'
+          type={'text'}
           className='form-control'
-          placeholder='Username'
+          name='username'
+          placeholder={'Username'}
           value={loginData.username}
           onChange={handleChange}
           required
@@ -17,18 +18,15 @@ function LoginPresenter({ loginData, handleChange, handleSubmit }) {
           type='password'
           className='form-control'
           placeholder='Password'
+          name='password'
           value={loginData.password}
           onChange={handleChange}
           required
         />
-        <a className='btn btn-lg btn-primary btn-block' to={'/'}>
-          로그인
-        </a>
+        <button className='btn btn-lg btn-primary btn-block'>로그인</button>
       </form>
-      <p className='text-help text-center'>
-        계정이 필요하신가요? <a>계정 만들기</a>
-      </p>
-      <style jsx global>{`
+
+      <style>{`
         .login form {
           max-width: 320px;
           padding: 8px;
