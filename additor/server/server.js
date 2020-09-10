@@ -41,12 +41,10 @@ app.post('/update', function (req, res) {
     var foundIndex = data.findIndex(
       (datum) => datum.username == req.body.username
     );
-    console.log(foundIndex);
     const newElement = {
       ...data[foundIndex],
       contents: req.body.contents,
     };
-    console.log(newElement);
     data[foundIndex] = newElement;
     res.status(200).json(data[foundIndex]);
   } catch (error) {

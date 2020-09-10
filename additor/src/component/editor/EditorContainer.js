@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import EditorPresenter from './EditorPresenter';
-import AuthContext from '../../context/AuthContext';
 import { useHistory } from 'react-router-dom';
 import { postContent } from '../../api/backendAPI';
 
 //Quill
-import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 
 function EditorContainer() {

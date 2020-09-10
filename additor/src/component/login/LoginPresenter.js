@@ -23,7 +23,8 @@ function LoginPresenter({ loginData, handleChange, handleSubmit }) {
           onChange={handleChange}
           required
         />
-        <button className='btn btn-lg btn-primary btn-block'>로그인</button>
+
+        <button className='btn'>로그인</button>
       </form>
 
       <style>{`
@@ -42,6 +43,7 @@ function LoginPresenter({ loginData, handleChange, handleSubmit }) {
           color: #fffffe;
           font-weight: 800;
           border-color: unset;
+          border-radius: 10px;
           margin-top: 10px;
         }
         .login .text-help {

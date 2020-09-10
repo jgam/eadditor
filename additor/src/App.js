@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import 'normalize.css';
 import './App.css';
 import AuthContext from '../src/context/AuthContext';
 import AuthRoute from './auth/AuthRoute';
@@ -18,14 +18,12 @@ import Editor from './component/editor';
 function App() {
   const { auth } = useContext(AuthContext);
   const localAuth = localStorage.getItem('auth');
-  console.log(localAuth);
   console.log('auth is ', auth);
   return (
     <Router>
       <AuthProvider>
-        <Switch>
-          <div className='App'>
-            hello from react
+        <div className='App'>
+          <Switch>
             <AuthRoute
               authenticated={auth || localAuth}
               path='/editor'
@@ -37,8 +35,8 @@ function App() {
               component={auth || localAuth ? Editor : Login}
             />
             <Redirect from={'*'} to={'/'} />
-          </div>
-        </Switch>
+          </Switch>
+        </div>
       </AuthProvider>
     </Router>
   );
