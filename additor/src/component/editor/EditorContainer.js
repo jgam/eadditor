@@ -20,7 +20,6 @@ function EditorContainer() {
   }
 
   async function onChange(e) {
-    console.log(e);
     setValue(e);
     //dont know the cost for api traffics
     localStorage.setItem('contents', e);

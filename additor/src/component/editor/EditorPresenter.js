@@ -26,6 +26,8 @@ const Logout = styled.button`
 
 const ALink = styled.a`
   color: #fffffe;
+  text-decoration: none;
+  font-size: 15px;
   &:hover {
     color: #00a0c6;
 
@@ -50,7 +52,7 @@ function EditorPresenter({ username, logout, value, onChange }) {
   return (
     <>
       <Header>
-        <Greetings>this is editor, hello {username}</Greetings>
+        <Greetings>Welcome to A(E)dditor, hello {username}</Greetings>
         <Logout onClick={logout}>
           <ALink href='http://localhost:3000/'>logout</ALink>
         </Logout>
