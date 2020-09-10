@@ -12,6 +12,7 @@ BackEND
 
 Dones:
 - fulfilled all the basic requirements
+
     [x] 1. 처음 페이지에 진입했을 때, 유저의 email 및 password 를 입력받습니다.
     [x] 유저가 입력한 email이 이미 회원가입 되었다면, 함께 전달받은 password로 로그인합니다.
     [x] 유저가 입력한 email이 회원가입되지 않았다면, 함께 전달받은 password로 회원가입합니다.
