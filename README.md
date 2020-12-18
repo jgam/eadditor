@@ -32,7 +32,7 @@ To be done or should have done:
 - thorough architecture beforehand by checking all the requirements
 - implement token and session with backend
 - better csss
-- implement the database
+- implement the databases
 
 
 How to RUN project
